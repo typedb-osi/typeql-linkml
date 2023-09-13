@@ -1,0 +1,677 @@
+{
+    "uriorcurie": {
+        "type": "attribute",
+        "abstract": true,
+        "value": "string"
+    },
+    "curie": {
+        "type": "uriorcurie",
+        "abstract": false
+    },
+    "uri": {
+        "type": "uriorcurie",
+        "abstract": false
+    },
+    "time": {
+        "type": "attribute",
+        "abstract": true,
+        "value": "datetime"
+    },
+    "XSDTime": {
+        "type": "time",
+        "abstract": false,
+        "value": "datetime"
+    },
+    "ncname": {
+        "type": "attribute",
+        "abstract": false,
+        "value": "string"
+    },
+    "iri_type": {
+        "type": "uriorcurie",
+        "abstract": false
+    },
+    "category_type": {
+        "type": "uriorcurie",
+        "abstract": false
+    },
+    "label_type": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "narrative_text": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "biological_sequence": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "predicate_type": {
+        "type": "uriorcurie",
+        "abstract": false
+    },
+    "unit": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "symbol_type": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "integer": {
+        "type": "attribute",
+        "value": "double",
+        "abstract": false
+    },
+    "float": {
+        "type": "attribute",
+        "value": "long",
+        "abstract": false
+    },
+    "date": {
+        "type": "attribute",
+        "value": "datetime",
+        "abstract": false
+    },
+    "date_or_datetime": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "has_numeric_value": {
+        "type": "attribute",
+        "value": "double",
+        "abstract": false
+    },
+    "has_unit": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "node_property": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "icd9_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "icd10_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "umls_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "meddra_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "omim_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "doid_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "ncit_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "mesh_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "orphanet_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "hp_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "efo_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "go_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "uberon_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "study_identifier": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "unique_subject_identifier": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "iri": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "license": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "rights": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "format": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "creation_date": {
+        "type": "attribute",
+        "value": "datetime",
+        "abstract": false
+    },
+    "update_date": {
+        "type": "attribute",
+        "value": "datetime",
+        "abstract": false
+    },
+    "authors": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "pages": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "summary": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "keywords": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "mesh_terms": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "category": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "name": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "description": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "provided_by": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "xref": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "has_attribute": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "symbol": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "synonym": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "has_biological_sequence": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "in_taxon": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "in_taxon_label": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "association_slot": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "subject": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "object": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "predicate": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "original_subject": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "original_object": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "original_predicate": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "subject_category": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "object_category": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "has_attribute_type": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "study_site_identifier": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "has_qualitative_value": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "has_quantitative_value": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "negated": {
+        "type": "attribute",
+        "value": "boolean",
+        "abstract": false
+    },
+    "qualifiers": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "publications": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "has_evidence": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "reported_term": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "has_taxonomic_rank": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "publication_type": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "biological_sex": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "phenotypic_sex": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "birth_date": {
+        "type": "attribute",
+        "value": "datetime",
+        "abstract": false
+    },
+    "actual_arm_code": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "actual_arm_description": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "superior_disease": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "subordinate_disease": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "visit_name": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "visit_number": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "visit_day": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "subject_age": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "age_units": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "vital_signs_measurement_units": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "laboratory_test_measurement_units": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "vital_signs_test_code": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "vital_signs_test_name": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "vital_signs_category": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "vital_signs_subcategory": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "laboratory_test_name": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "laboratory_test_code": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "laboratory_test_category": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "laboratory_test_subcategory": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "medical_history_category": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "medical_history_subcategory": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "measurement": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "vital_signs_measurement": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "laboratory_test_measurement": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "ethnicity": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "race": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "biospecimen_identifier": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "biospecimen_type": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "biospecimen_type_code": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "brenda_tissue_ontology_identifier": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "medical_history_reported_term": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "medical_history_lowest_level_term": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "medical_history_lowest_level_term_code": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "medical_history_preferred_term_code": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "assay_identifier": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "assay_type": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "omics_type": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "adverse_event_lowest_level_term_code": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "adverse_event_lowest_level_term": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "adverse_event_start_date": {
+        "type": "attribute",
+        "value": "datetime",
+        "abstract": false
+    },
+    "adverse_event_end_date": {
+        "type": "attribute",
+        "value": "datetime",
+        "abstract": false
+    },
+    "adverse_event_reference_identifier": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "adverse_event_reported_term": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "adverse_event_preferred_term_code": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "adverse_event_sponsor_defined_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "adverse_event_severity": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "concomitant_medication_end_date": {
+        "type": "attribute",
+        "value": "datetime",
+        "abstract": false
+    },
+    "concomitant_medication_start_date": {
+        "type": "attribute",
+        "value": "datetime",
+        "abstract": false
+    },
+    "concomitant_medication_class": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "concomitant_medication_category": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "concomitant_medication_subcategory": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "concomitant_medication_sponsor_defined_id": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "concomitant_medication_dictionary_term": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "concomitant_medication_verbatim_term": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "uriorcurie": {
+        "type": "attribute",
+        "abstract": true,
+        "value": "string"
+    },
+    "curie": {
+        "type": "uriorcurie",
+        "abstract": false
+    },
+    "uri": {
+        "type": "uriorcurie",
+        "abstract": false
+    },
+    "time": {
+        "type": "attribute",
+        "abstract": true,
+        "value": "datetime"
+    },
+    "XSDTime": {
+        "type": "time",
+        "abstract": false,
+        "value": "datetime"
+    },
+    "ncname": {
+        "type": "attribute",
+        "abstract": false,
+        "value": "string"
+    },
+    "iri_type": {
+        "type": "uriorcurie",
+        "abstract": false
+    },
+    "category_type": {
+        "type": "uriorcurie",
+        "abstract": false
+    },
+    "label_type": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "narrative_text": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "biological_sequence": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "predicate_type": {
+        "type": "uriorcurie",
+        "abstract": false
+    },
+    "unit": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "symbol_type": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    },
+    "integer": {
+        "type": "attribute",
+        "value": "double",
+        "abstract": false
+    },
+    "float": {
+        "type": "attribute",
+        "value": "long",
+        "abstract": false
+    },
+    "date": {
+        "type": "attribute",
+        "value": "datetime",
+        "abstract": false
+    },
+    "date_or_datetime": {
+        "type": "attribute",
+        "value": "string",
+        "abstract": false
+    }
+}

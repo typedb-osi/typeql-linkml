@@ -1,0 +1,118 @@
+{
+    "association": {
+        "name": "association",
+        "type": "relation",
+        "relates": "",
+        "abstract": true
+    },
+    "gene to gene association": {
+        "name": "GeneToGeneAssociation",
+        "type": "association",
+        "relates": ", relates Subject, relates Object",
+        "abstract": false
+    },
+    "gene to pathway association": {
+        "name": "GeneToPathwayAssociation",
+        "type": "association",
+        "relates": ", relates Subject, relates Object",
+        "abstract": false
+    },
+    "molecular activity to pathway association": {
+        "name": "MolecularActivityToPathwayAssociation",
+        "type": "association",
+        "relates": ", relates Subject, relates Object, relates Predicate",
+        "abstract": false
+    },
+    "subject entered into trial": {
+        "name": "SubjectEnteredIntoTrial",
+        "type": "association",
+        "relates": ", relates Subject, relates Object, owns actual_arm_description, owns actual_arm_code",
+        "abstract": false,
+        "plays": ", plays SubjectVisit:Subject"
+    },
+    "subject visit": {
+        "name": "SubjectVisit",
+        "type": "association",
+        "relates": ", relates Subject, owns visit_name, owns visit_day, owns visit_number",
+        "abstract": false,
+        "plays": ", plays BiospecimenCollectedAtVisit:Subject, plays LaboratoryProcedureAtVisit:Subject, plays VitalSignsMeasurementAtVisit:Object"
+    },
+    "biospecimen collected at visit": {
+        "name": "BiospecimenCollectedAtVisit",
+        "type": "association",
+        "relates": ", relates Subject, relates Object",
+        "abstract": false
+    },
+    "laboratory procedure at visit": {
+        "name": "LaboratoryProcedureAtVisit",
+        "type": "association",
+        "relates": ", relates Subject, relates Predicate, relates Object, owns laboratory_test_measurement, owns laboratory_test_measurement_units",
+        "abstract": false
+    },
+    "vital signs measurement at visit": {
+        "name": "VitalSignsMeasurementAtVisit",
+        "type": "association",
+        "relates": ", relates Subject, relates Object, owns vital_signs_measurement, owns vital_signs_measurement_units",
+        "abstract": false
+    },
+    "biospecimen type association": {
+        "name": "BiospecimenTypeAssociation",
+        "type": "association",
+        "relates": ", relates Subject, relates Object",
+        "abstract": false
+    },
+    "has gene product": {
+        "name": "HasGeneProduct",
+        "type": "association",
+        "relates": ", relates Subject, relates Object",
+        "abstract": false
+    },
+    "transcribed to": {
+        "name": "TranscribedTo",
+        "type": "association",
+        "relates": ", relates Subject, relates Object",
+        "abstract": false
+    },
+    "analyte targets molecular entity": {
+        "name": "AnalyteTargetsMolecularEntity",
+        "type": "association",
+        "relates": ", relates Subject, relates Object, relates Predicate",
+        "abstract": false
+    },
+    "translates to": {
+        "name": "TranslatesTo",
+        "type": "association",
+        "relates": ", relates Subject, relates Object",
+        "abstract": false
+    },
+    "disease hierarchy": {
+        "name": "DiseaseHierarchy",
+        "type": "association",
+        "relates": ", relates SuperiorDisease, relates SubordinateDisease, owns superior_disease, owns subordinate_disease",
+        "abstract": false
+    },
+    "subject medical history": {
+        "name": "SubjectMedicalHistory",
+        "type": "association",
+        "relates": ", relates Subject, relates MedicalHistoryLowestLevelTerm, relates MedicalHistoryPreferredTermCode, owns medical_history_lowest_level_term, owns medical_history_preferred_term_code, owns medical_history_reported_term",
+        "abstract": false
+    },
+    "subject adverse event": {
+        "name": "SubjectAdverseEvent",
+        "type": "association",
+        "relates": ", relates Subject, relates AdverseEventLowestLevelTerm, relates AdverseEventLowestLevelTermCode, relates AdverseEventStartDate, relates AdverseEventEndDate, relates AdverseEventPreferredTermCode, owns adverse_event_lowest_level_term, owns adverse_event_lowest_level_term_code, owns adverse_event_start_date, owns adverse_event_end_date, owns adverse_event_reported_term, owns adverse_event_preferred_term_code, owns adverse_event_sponsor_defined_id, owns adverse_event_severity",
+        "abstract": false
+    },
+    "subject concomitant medication": {
+        "name": "SubjectConcomitantMedication",
+        "type": "association",
+        "relates": ", relates Subject, relates ConcomitantMedicationStartDate, relates ConcomitantMedicationEndDate, relates ConcomitantMedicationClass, owns concomitant_medication_start_date, owns concomitant_medication_end_date, owns concomitant_medication_category, owns concomitant_medication_subcategory, owns concomitant_medication_sponsor_defined_id, owns concomitant_medication_dictionary_term, owns concomitant_medication_verbatim_term, owns concomitant_medication_class",
+        "abstract": false
+    },
+    "pairwise gene to gene interaction": {
+        "name": "PairwiseGeneToGeneInteraction",
+        "type": "GeneToGeneAssociation",
+        "relates": ", relates Predicate",
+        "abstract": false
+    }
+}

@@ -1,0 +1,212 @@
+{
+    "named thing": {
+        "name": "NamedThing",
+        "type": "entity",
+        "attributes": "owns provided_by, owns xref, owns id, owns iri, owns category, owns name, owns description, owns has_attribute"
+    },
+    "information content entity": {
+        "name": "InformationContentEntity",
+        "type": "NamedThing",
+        "attributes": "owns license, owns rights, owns format, owns creation_date"
+    },
+    "organism taxon": {
+        "name": "OrganismTaxon",
+        "type": "NamedThing",
+        "attributes": ""
+    },
+    "attribute": {
+        "name": "Attribute",
+        "type": "NamedThing",
+        "attributes": "owns has_attribute_type, owns has_quantitative_value, owns has_qualitative_value"
+    },
+    "biological entity": {
+        "name": "BiologicalEntity",
+        "type": "NamedThing",
+        "attributes": "owns in_taxon, owns in_taxon_label, plays AnalyteTargetsMolecularEntity:Object"
+    },
+    "country": {
+        "name": "Country",
+        "type": "NamedThing",
+        "attributes": ""
+    },
+    "chemical entity": {
+        "name": "ChemicalEntity",
+        "type": "NamedThing",
+        "attributes": ""
+    },
+    "clinical entity": {
+        "name": "ClinicalEntity",
+        "type": "NamedThing",
+        "attributes": ""
+    },
+    "vital sign": {
+        "name": "VitalSign",
+        "type": "NamedThing",
+        "attributes": "owns vital_signs_category, owns vital_signs_subcategory, owns vital_signs_test_name, owns vital_signs_test_code, plays VitalSignsMeasurementAtVisit:Subject"
+    },
+    "biospecimen": {
+        "name": "Biospecimen",
+        "type": "NamedThing",
+        "attributes": "owns biospecimen_type, owns biospecimen_identifier, owns biospecimen_type_code, plays BiospecimenCollectedAtVisit:Object, plays LaboratoryProcedureAtVisit:Predicate, plays BiospecimenTypeAssociation:Subject"
+    },
+    "laboratory procedure": {
+        "name": "LaboratoryProcedure",
+        "type": "NamedThing",
+        "attributes": "owns laboratory_test_category, owns laboratory_test_subcategory, owns laboratory_test_code, owns laboratory_test_name, plays LaboratoryProcedureAtVisit:Object"
+    },
+    "assay": {
+        "name": "Assay",
+        "type": "LaboratoryProcedure",
+        "attributes": "owns assay_type, owns assay_identifier, owns omics_type, owns uri, plays AnalyteTargetsMolecularEntity:Predicate"
+    },
+    "clinical trial": {
+        "name": "ClinicalTrial",
+        "type": "ClinicalEntity",
+        "attributes": "owns study_identifier, plays SubjectEnteredIntoTrial:Object"
+    },
+    "molecular entity": {
+        "name": "MolecularEntity",
+        "type": "ChemicalEntity",
+        "attributes": ""
+    },
+    "drug class": {
+        "name": "DrugClass",
+        "type": "ChemicalEntity",
+        "attributes": "plays SubjectConcomitantMedication:ConcomitantMedicationClass"
+    },
+    "drug": {
+        "name": "Drug",
+        "type": "DrugClass",
+        "attributes": ""
+    },
+    "nucleic acid entity": {
+        "name": "NucleicAcidEntity",
+        "type": "MolecularEntity",
+        "attributes": ""
+    },
+    "small molecule": {
+        "name": "SmallMolecule",
+        "type": "MolecularEntity",
+        "attributes": ""
+    },
+    "target": {
+        "name": "Target",
+        "type": "MolecularEntity",
+        "attributes": ""
+    },
+    "analyte": {
+        "name": "Analyte",
+        "type": "MolecularEntity",
+        "attributes": "plays AnalyteTargetsMolecularEntity:Subject"
+    },
+    "transcript": {
+        "name": "Transcript",
+        "type": "NucleicAcidEntity",
+        "attributes": "plays TranscribedTo:Object, plays TranslatesTo:Subject"
+    },
+    "gene": {
+        "name": "Gene",
+        "type": "BiologicalEntity",
+        "attributes": "owns symbol, owns synonym, plays HasGeneProduct:Subject, plays TranscribedTo:Subject"
+    },
+    "macromolecular complex": {
+        "name": "MacromolecularComplex",
+        "type": "BiologicalEntity",
+        "attributes": ""
+    },
+    "polypeptide": {
+        "name": "Polypeptide",
+        "type": "BiologicalEntity",
+        "attributes": ""
+    },
+    "organismal entity": {
+        "name": "OrganismalEntity",
+        "type": "BiologicalEntity",
+        "attributes": ""
+    },
+    "disease or phenotypic feature": {
+        "name": "DiseaseOrPhenotypicFeature",
+        "type": "BiologicalEntity",
+        "attributes": ""
+    },
+    "disease": {
+        "name": "Disease",
+        "type": "DiseaseOrPhenotypicFeature",
+        "attributes": "plays DiseaseHierarchy:SuperiorDisease, plays DiseaseHierarchy:SubordinateDisease, plays SubjectMedicalHistory:MedicalHistoryLowestLevelTerm, plays SubjectMedicalHistory:MedicalHistoryPreferredTermCode, plays SubjectAdverseEvent:AdverseEventLowestLevelTerm, plays SubjectAdverseEvent:AdverseEventLowestLevelTermCode, plays SubjectAdverseEvent:AdverseEventPreferredTermCode"
+    },
+    "anatomical entity": {
+        "name": "AnatomicalEntity",
+        "type": "OrganismalEntity",
+        "attributes": ""
+    },
+    "cellular organism": {
+        "name": "CellularOrganism",
+        "type": "OrganismalEntity",
+        "attributes": ""
+    },
+    "mammal": {
+        "name": "Mammal",
+        "type": "CellularOrganism",
+        "attributes": ""
+    },
+    "human": {
+        "name": "Human",
+        "type": "Mammal",
+        "attributes": "owns birth_date, owns race, owns ethnicity, owns phenotypic_sex, plays SubjectEnteredIntoTrial:Subject, plays SubjectMedicalHistory:Subject, plays SubjectAdverseEvent:Subject, plays SubjectConcomitantMedication:Subject"
+    },
+    "cellular component": {
+        "name": "CellularComponent",
+        "type": "AnatomicalEntity",
+        "attributes": ""
+    },
+    "cell": {
+        "name": "Cell",
+        "type": "AnatomicalEntity",
+        "attributes": ""
+    },
+    "gross anatomical structure": {
+        "name": "GrossAnatomicalStructure",
+        "type": "AnatomicalEntity",
+        "attributes": "owns brenda_tissue_ontology_identifier, plays BiospecimenTypeAssociation:Object"
+    },
+    "protein": {
+        "name": "Protein",
+        "type": "Polypeptide",
+        "attributes": "plays HasGeneProduct:Object, plays TranslatesTo:Object"
+    },
+    "publication": {
+        "name": "Publication",
+        "type": "InformationContentEntity",
+        "attributes": "owns authors, owns pages, owns summary, owns keywords, owns mesh_terms"
+    },
+    "evidence type": {
+        "name": "EvidenceType",
+        "type": "InformationContentEntity",
+        "attributes": ""
+    },
+    "thing with taxon": {
+        "name": "ThingWithTaxon",
+        "type": "entity",
+        "attributes": "owns in_taxon, owns in_taxon_label"
+    },
+    "gene or gene product": {
+        "name": "GeneOrGeneProduct",
+        "type": "entity",
+        "attributes": "owns name, plays GeneToGeneAssociation:Subject, plays GeneToGeneAssociation:Object, plays GeneToPathwayAssociation:Subject"
+    },
+    "genomic entity": {
+        "name": "GenomicEntity",
+        "type": "entity",
+        "attributes": "owns has_biological_sequence"
+    },
+    "ontology class": {
+        "name": "OntologyClass",
+        "type": "entity",
+        "attributes": "owns id"
+    },
+    "macromolecular machine mixin": {
+        "name": "MacromolecularMachineMixin",
+        "type": "entity",
+        "attributes": "owns name"
+    }
+}
